@@ -1,0 +1,36 @@
+1)
+ a) select customerName, quantityOrdered from orderdetails inner join orders on orderdetails.orderNumber=orders.orderNumber inner join customers on customers.customerNumber=orders.customerNumber group by customerName;
+b)select customerName,orderNumber from orders right join customers on customers.customerNumber=orders.customerNumber where orderNumber is NULL;
+
+c)select lastname,count(salesRepEmployeeNumber),salesRepEmployeeNumber from employees inner join customers on employees.employeeNumber=customers.salesRepEmployeeNumber group by salesRepEmployeeNumber;
+
+select lastname,count(lastname) as NumberofCustomers from employees inner join customers on employees.employeeNumber=customers.salesRepEmployeeNumber group by salesRepEmployeeNumber order by count(lastname) DESC;
+
+d) select productName from products inner join orderdetails on products.productcode=orderdetails.productCode inner join orders on orderdetails.orderNumber=orders.ordernumber inner join customers on orders.customerNumber=customers.customerNumber where customername="Muscle Machine Inc";
+
+e)select productname,count(productName) from products group by productname;
+
+............................................................................................................................................................................
+2)
+
+i) select avg(mark) from student_mark;
+
+
+
+
+
+
+
+
+
+
+
+............................................................................................................................................................................
+2)
+1-create table Number (rnumber float);
+2- create procedure insertintotable(IN var1 INT) BEGIN DECLARE x INT; SET x=1;loop_label: LOOP IF x>var1 THEN LEAVE loop_label;END IF;insert into Number(rnumber) values (RAND());SET x=x+1;END LOOP;END$$
+ 
+
+.........................................................................................................................................................................
+3)
+ create procedure sumofevens(IN var1 INT) BEGIN Declare x INT;Declare y INT;SET x=0;SET y=0; loop_label: LOOP IF x>var1-1 THEN LEAVE loop_label;END IF;SET x=1+x; IF (x mod 2) THEN ITERATE loop_label;ELSE SET y=y+x;END IF; END LOOP;select y;END$$

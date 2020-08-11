@@ -1,0 +1,10 @@
+5. Give an example of a relation R that is a total injective function from a set A to itself but is not a bijcction. 
+
+6. Let f: A B and g: B C be function. (a) Prove that if the composition gofisa bijection. then f is a total injection and g is a surjection. (b) Show there is a total injection / and a bijection, g, such that g of is not a bijection. 
+
+7. Let X(a,b). If F: X surjective functions F X, then list all partial functions F, all functions F, all injective functions F, and all
+
+8. Give an example of two uncountable sets A and B such that there is no bijection between them. 
+
+
+9. For each of the following sets, indicate whether it is finite, countably infinite, or uncountable. Justify your answers. (a) The set of even integers greater than 10100. (b) The power set of integer interval [10.., 10101 (c) UUD, where U is an uncountable set and D be a countably infinite set. (d) U-D, where U and D are as in part (d).

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.good{
+			color: green;
+		}
+		.bad{
+			color: red;
+		}
+		input[type="submit"]{
+			background-color: green;
+  color: white;
+		}
+		input{
+			background-color: #f1f1f1;
+  padding: 20px;
+		}
+		#box{
+			border:10px;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 50px;
+
+		}
+
+	</style>
+
+<body>
+	<h3>Password Validation</h3>
+	<div class="main">
+		<form action="a2.php" method="post">
+			Username <input type="text" name="username">
+			Password <input type="Password" id="pass" name="pass">
+
+			<input type="button" value="Submit">
+		</form>
+	</div>
+		<div id="box"><h3>Password must contain the following :</h3>
+			<p id="low" class="bad">A lowercase letter</p>
+			<p id="upp" class="bad">An uppercase letter</p>
+			<p id="num" class="bad">A number</p>
+			<p id="len" class="bad">Minimum 8</p>
+		</div>
+	
+	<script>
+
+		var p=document.getElementById("pass");
+		var a=document.getElementById("low");
+		var b=document.getElementById("upp");
+		var c=document.getElementById("num");
+		var d=document.getElementById("len");
+		p.onfocus=function(){
+			document.getElementById("box").style.display="block";
+		}
+		p.onblur=function(){
+			document.getElementById("box").style.display="none";
+		}
+		p.onkeyup=function(){
+
+			if(p.value.match(/[a-z]/g)){
+				a.classList.remove("bad");
+				a.classList.add("good");
+			}
+			else{
+				a.classList.remove("good");
+				a.classList.add("bad");
+			}
+			if(p.value.match(/[A-Z]/g)){
+				b.classList.remove("bad");
+				b.classList.add("good");
+			}
+			else{
+				b.classList.remove("good");
+				b.classList.add("bad");
+			}
+			if(p.value.match(/[0-9]/g)){
+				c.classList.remove("bad");
+				c.classList.add("good");
+			}
+			else{
+				c.classList.remove("good");
+				c.classList.add("bad");
+			}
+			if(p.value.length>=8){
+				d.classList.remove("bad");
+				d.classList.add("good");
+			}
+			else{
+				d.classList.remove("good");
+				d.classList.add("bad");
+			}
+		}
+	</script>
+</body>
+
+</head>
+</html>

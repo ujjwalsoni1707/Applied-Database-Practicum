@@ -1,0 +1,103 @@
+<html>
+<head>
+<link href="b.css" type="text/css" rel="stylesheet">
+<title>Assignment 1</title>
+
+
+</head>
+<body>
+  <h1>Assignment No. 1</h1>
+  
+  <div class="dropdown">
+    <form >
+      <select name="ujjwal">
+        <option value="Home Page">Home Page</option>
+        <option value="Links">Links</option>
+      </select>
+  </div> 
+<h4> Welcome to CS 207</h4> 
+
+<div class="rangeslider">
+<input type="range" min="1" max="100" value="10" class="myslider" id="sliderRange">
+  </div>
+<script type="text/javascript">
+  var rangeslider = document.getElementById("sliderRange");
+  var output = document.getElementById("demo");
+  output.innerHTML= rangeslider.value;
+
+  rangeslider.oninput = function(){
+    output. innerHTML =this.value;
+  }
+
+</script>
+
+  <br>
+  
+<div class="anchor">
+<a href="a.html#tar">Jump Link</a></div>
+<div class="table">
+<table>
+  <tr>
+    <th>No.</th>
+    <th>Name</th> 
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Clark Kent</td> 
+    <td>clarkkent@mail.com</td>
+  </tr>
+<tr>
+    <td>2</td>
+    <td>Peter Parker</td> 
+    <td>peterparker@mail.com</td>
+  </tr>
+<tr>
+    <td>3</td>
+    <td>Bruce Wayne</td> 
+    <td>brucewayne@mail.com</td>
+  </tr>
+<tr>
+    <td>4</td>
+    <td>Tony Stark</td> 
+    <td>tonystark@mail.com</td>
+  </tr>
+<tr>
+    <td>5</td>
+    <td>Bucky Barnes</td> 
+    <td>buckybarnes@mail.com</td>
+  </tr>
+<tr>
+    <td>6</td>
+    <td>Reed Richards</td> 
+    <td>reedrichards@mail.com</td>
+  </tr>
+<tr>
+    <td>7</td>
+    <td>Jonn Jonzz</td> 
+    <td>jonnjonzz@mail.com</td>
+  </tr>
+<tr>
+    <td>8</td>
+    <td>Sheira Snaders</td> 
+    <td>sheirasanders@mail.com</td>
+  </tr>
+  
+</table> </div>
+
+<div id="audio">
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+</audio> </div>
+
+
+
+<br><br><br><br><hr size="5" color=maroon>
+
+<h2><a id="tar">END</a></h2>
+
+
+
+
+</body>
+</html>

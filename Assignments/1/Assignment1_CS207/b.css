@@ -1,0 +1,57 @@
+body{
+background-color: lightgreen;
+
+}
+h1{
+	margin-left: 650px;
+	
+	color:maroon;
+}
+h4{
+	margin-left: 650px;
+	
+	color:maroon;
+}
+h3{
+	margin-left: 650px;
+	
+	color:maroon;
+}
+table{
+	margin-left: 650px;
+	margin-top: 50px;
+	border: 10px;
+	color: maroon;
+
+}
+table, th, td {
+  border: 1px solid black;
+  border-color: maroon;
+} 
+h2{
+	color: maroon;
+	margin-left: 650px;
+	margin-top: 300px;
+}
+#audio{
+	margin-top: 200px;
+	margin-left: 650px;
+}
+hr{
+	color: black;
+	
+}
+.anchor{
+	margin-left: 650px;
+}
+.rangeslider{
+	margin-left: 650px;
+	width: 50%;
+}
+.myslider{
+	background: #FCF3CF
+}
+.myslider:hover{
+	opacity: 1;
+
+}

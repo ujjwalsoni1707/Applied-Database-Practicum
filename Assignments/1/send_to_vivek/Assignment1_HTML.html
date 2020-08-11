@@ -1,0 +1,127 @@
+<html>
+<head>
+<link href="Assignment1_CSS.css" type="text/css" rel="stylesheet">
+<title>Assignment 1</title>
+</head>
+
+<body>
+
+ <h1>Assignment No. 1<br>Understanding HTML and CSS </h1>
+  
+ <div class="dropdown">
+ <button onclick="myFunction()" class="dropbtn">Home Page</button>
+ <br>
+ <button onclick="myFunction()" class="dropbtn">Links</button>
+ <div id="myDropdown" class="dropdown-content">
+ 	<a href="https://www.google.com">Google</a>
+    <a href="https://www.iitmandi.ac.in">IIT Mandi</a>
+ </div>
+ </div>
+
+<h4> Welcome to CS 207, APPLIED DATABASE PRACTICUM </h4> 
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)" id="sli_der">0
+	<input type="range" id="a" value="50">100
+	+<input type="number" id="b" value="50">
+	=<output name="x" for="a b"></output>
+</form>
+
+<div class="drop_down">
+	<script>
+
+	function myFunction() {
+  	document.getElementById("myDropdown").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+  	if (!event.target.matches('.dropbtn')) {
+    	var dropdowns = document.getElementsByClassName("dropdown-content");
+    	var i;
+    	for (i = 0; i < dropdowns.length; i++) {
+      	var openDropdown = dropdowns[i];
+      	if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+</script>
+</div>
+<br>
+
+<div class="anchor">
+<a href="a.html#tar">Jump Link</a></div>
+<br>
+
+<h4> Teaching Assistants for CS 207</h4>
+
+<div class="table">
+<table>
+  <tr>
+    <th>No.</th>
+    <th>Name</th> 
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Prajjwal Jha</td> 
+    <td>B17051@students,iitmandi.ac.in</td>
+  </tr>
+<tr>
+    <td>2</td>
+    <td>Tanmay Rustagi</td> 
+    <td>B17028@students,iitmandi.ac.in</td>
+  </tr>
+<tr>
+    <td>3</td>
+    <td>Dheeraj</td> 
+    <td>B17041@students,iitmandi.ac.in</td>
+  </tr>
+<tr>
+    <td>4</td>
+    <td>Kanika Gupta</td> 
+    <td>B17047@students,iitmandi.ac.in</td>
+  </tr>
+<tr>
+    <td>5</td>
+    <td>Swapnil Rustagi</td> 
+    <td>B17104@students,iitmandi.ac.in</td>
+  </tr>
+<tr>
+    <td>6</td>
+    <td>Vipul Sharma</td> 
+    <td>B17069@students,iitmandi.ac.in</td>
+  </tr>
+<tr>
+    <td>7</td>
+    <td>Utkarsh Jain</td> 
+    <td>B17029@students,iitmandi.ac.in</td>
+  </tr>
+<tr>
+    <td>8</td>
+    <td>Ankit Katiyar</td> 
+    <td>T19137@students,iitmandi.ac.in</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Abhinav Choudhary</td> 
+    <td>abhinavchoudhury.04@mail.com</td>
+  </tr>
+  
+</table> 
+</div>
+
+
+<div id="audio">
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+</audio> 
+</div>
+
+<br><br><br><br><hr>
+
+<h2 id="cs207" >Made 19th August, 2019<br>For CS 207.</h2>
+
+<h2 id="END"><a id="tar">END</a></h2>
+
+</body>
+</html>

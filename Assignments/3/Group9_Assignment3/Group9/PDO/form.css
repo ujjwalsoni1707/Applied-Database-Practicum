@@ -1,0 +1,40 @@
+
+h2{
+	text-align: center;
+	padding: 10px;
+	margin-right: 85px;
+}
+h3{
+	color: black;
+	font-size: 22px;
+	text-align: center;
+	padding: 10px;
+	margin-right: 40px;
+}
+.box{
+	
+	background: #2d85b0;
+	width: 300px;
+	margin: 0px 0px 0px 450px;
+	color: white;
+	font-size: 14px;
+	padding: 8px;
+	border-radius: 10px;
+
+}
+#felement{
+	margin-left:30px;
+	margin-bottom: 40px;
+
+}
+
+label{
+	color: black;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+#bt{
+	width: 243px;
+	font-size: 20px;
+}
